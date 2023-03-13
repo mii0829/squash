@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+
+}
+
+
+
+h1 {
+    font-size: 128px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+#intro {
+    background-color: #e9ecf3;
+    height: 100vh;
+}
+.header {
+    background-color: aqua;
+    width: 931px;
+    height: 353px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;  
+}
+
+.header img {
+    width: 343px;
+}
+
+#about {
+    height: 100vh;
+    background-color: #ffffff;
+}
+.content {
+    width: 606px;
+    margin: 0 auto;
+}
+
+.content p {
+    line-height: 50px;
+}
+
+#point {
+    background-color: #F4E3E3;
+}
+#point h3 {
+    color: #e8534d;
+    text-align: center;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    width: 970px;
+    height: 508px;
+    margin: 0 auto;
+}
+
+.title img {
+    width: 100px;
+}
+
+.box h2 {
+    color: #e8534d;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.title {
+    display: flex;
+}
+
+.image img {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+}
+
+#data {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#data h3 {
+    color: #3a4b9e;
+}
+
+.data-contents {
+    display: inline-block;
+    background-color: #E9ECF3;
+}
+
+.data-content {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.data-content img {
+    width: 98px;
+}
+
+.data-content h3 {
+    color: #3a4b9e;
+}
+
+#welcome {
+    background-color: #F4F0DE;
+    text-align: center;
+}
+
+#welcome h3 {
+    color: #EBC81E;
+}
+
+#welcome img {
+    width: 259px;
+    border-radius: 50%;
+}
+
+.welcome-contents {
+    display: flex;
+    margin: 0 auto;
+}
+
+.welcome-content {
+    width: 444px;
+}
