@@ -32,7 +32,6 @@ p {
     height: 100vh;
 }
 .header {
-    background-color: aqua;
     width: 931px;
     height: 353px;
     display: flex;
@@ -42,6 +41,10 @@ p {
 
 .header img {
     width: 343px;
+}
+
+.title {
+    display: inline-block;
 }
 
 #about {
@@ -73,7 +76,7 @@ p {
     margin: 0 auto;
 }
 
-.title img {
+.point-title img {
     width: 100px;
 }
 
@@ -85,7 +88,7 @@ p {
     clear: both;
 }
 
-.title {
+.point-title {
     display: flex;
 }
 
