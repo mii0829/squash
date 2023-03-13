@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: "fot-tsukuardgothic-std", sans-serif;
-
+    font-weight: 700;
+    list-style: none;
+    text-decoration: none;
 }
 
 
@@ -10,32 +12,61 @@
 h1 {
     font-size: 128px;
     margin: 0 auto;
-    text-align: center;
-    font-weight: 700;
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 400;
 }
 
 h3 {
     font-size: 64px;
-    font-weight: 700;
 }
 
 p {
     font-weight: 400;
 }
+
+svg {
+    vertical-align: bottom;
+}
+
+
+nav {
+    display: flex;
+    width: 850px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+nav a{
+    color: #3a4b9e;
+}
+
+nav img {
+    width: 58px;
+    height: 60px;
+}
+
+header {
+    background-color: #e9ecf3;
+}
+
+
+
 #intro {
     background-color: #e9ecf3;
-    height: 100vh;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .header {
     width: 931px;
     height: 353px;
     display: flex;
-    margin: 0 auto;
     text-align: center;  
 }
 
@@ -47,9 +78,14 @@ p {
     display: inline-block;
 }
 
+/*スカッシュとは？？*/
 #about {
     height: 100vh;
     background-color: #ffffff;
+}
+
+#about h3 {
+    color: #3a4b9e;
 }
 .content {
     width: 606px;
@@ -60,6 +96,7 @@ p {
     line-height: 50px;
 }
 
+/*アピールポイント*/
 #point {
     background-color: #F4E3E3;
 }
@@ -69,7 +106,6 @@ p {
 }
 
 .box {
-    text-align: center;
     display: flex;
     width: 970px;
     height: 508px;
@@ -98,6 +134,8 @@ p {
     border-radius: 50%;
 }
 
+
+/*基本情報*/
 #data {
     text-align: center;
     background-color: #ffffff;
@@ -110,29 +148,41 @@ p {
 .data-contents {
     display: inline-block;
     background-color: #E9ECF3;
+    padding: 50px;
+    border-radius: 20px;
+
 }
 
 .data-content {
     display: flex;
     text-align: center;
     margin: 0 auto;
+    padding: 20px;
+    vertical-align: middle;
 }
 
 .data-content img {
     width: 98px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
-.data-content h3 {
+.data-content h2, h3 {
     color: #3a4b9e;
 }
 
+
+
+
+/*新入生歓迎会情報*/
+
 #welcome {
     background-color: #F4F0DE;
-    text-align: center;
-}
+    text-align: center;}
 
-#welcome h3 {
+#welcome h2, h3 {
     color: #EBC81E;
+
 }
 
 #welcome img {
@@ -140,11 +190,24 @@ p {
     border-radius: 50%;
 }
 
+.welcome-all {
+    display: inline-block;
+}
+
 .welcome-contents {
     display: flex;
-    margin: 0 auto;
 }
 
 .welcome-content {
     width: 444px;
+    padding: 40px;
+}
+
+.welcome-content p {
+    text-align: left;
+}
+
+/*フッター*/
+footer {
+    text-align: center;
 }
