@@ -30,6 +30,14 @@ svg {
     vertical-align: bottom;
 }
 
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    background: #e9ecf3;
+    position: relative;
+    opacity: 0.4;
+}
+
 
 nav {
     display: flex;
@@ -78,14 +86,26 @@ header {
     display: inline-block;
 }
 
+.instagram {
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.top {
+    display: flex;
+}
+
 /*スカッシュとは？？*/
 #about {
-    height: 100vh;
     background-color: #ffffff;
 }
 
 #about h3 {
     color: #3a4b9e;
+    text-align: center;
 }
 .content {
     width: 606px;
@@ -171,6 +191,13 @@ header {
     color: #3a4b9e;
 }
 
+.data-content h2 {
+    vertical-align: middle;
+}
+
+.data-content p {
+    vertical-align: middle;
+}
 
 
 
