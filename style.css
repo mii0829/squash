@@ -30,12 +30,36 @@ svg {
     vertical-align: bottom;
 }
 
-.circle {
+.circle1 {
     display: inline-block;
     border-radius: 50%;
     background: #e9ecf3;
-    position: relative;
-    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle2 {
+    border-radius: 50%;
+    background: #e8534d;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle3 {
+    display: inline-block;
+    border-radius: 50%;
+    background: #3a4b9e;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle4 {
+    display: inline-block;
+    border-radius: 50%;
+    background: #EBC81E;
+    position: absolute;
+    z-index: 2;
+
 }
 
 
@@ -80,10 +104,14 @@ header {
 
 .header img {
     width: 343px;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
     display: inline-block;
+    position: relative;
+    z-index: 2;
 }
 
 .instagram {
@@ -92,6 +120,7 @@ header {
     position: absolute;
     top: 0px;
     right: 0px;
+    z-index: 2;
 }
 
 .top {
@@ -114,6 +143,8 @@ header {
 
 .content p {
     line-height: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 /*アピールポイント*/
@@ -127,17 +158,25 @@ header {
 
 .box {
     display: flex;
-    width: 970px;
+    width: 1000px;
     height: 508px;
     margin: 0 auto;
+    align-items: center;
 }
 
-.point-title img {
+.num {
     width: 100px;
 }
 
 .box h2 {
     color: #e8534d;
+    padding: 20px;
+}
+
+.box p {
+    padding: 50px;
+    position: relative;
+    z-index: 3;
 }
 
 .clearfix {
@@ -146,14 +185,24 @@ header {
 
 .point-title {
     display: flex;
+    align-items: center;
+
 }
 
 .image img {
-    width: 410px;
-    height: 410px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
+    position: relative;
+    z-index: 3;
 }
 
+.add {
+    width: 40px;
+    position: relative;
+    top: -30px;
+    left: -20px;
+}
 
 /*基本情報*/
 #data {
@@ -178,7 +227,7 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 20px;
-    vertical-align: middle;
+    align-items: center;
 }
 
 .data-content img {
@@ -192,11 +241,7 @@ header {
 }
 
 .data-content h2 {
-    vertical-align: middle;
-}
-
-.data-content p {
-    vertical-align: middle;
+    padding: 30px;
 }
 
 
