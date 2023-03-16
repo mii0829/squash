@@ -9,6 +9,7 @@
 
 
 
+
 h1 {
     font-size: 128px;
     margin: 0 auto;
@@ -43,6 +44,21 @@ svg {
     background: #e8534d;
     position: absolute;
     z-index: 2;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2s;
+}
+
+.blink {
+	animation: blinking 0.7s ease-in-out infinite alternate;
+}
+ 
+@keyframes blinking {
+	0% {opacity: 0.3;}
+	100% {opacity: 1;}
 }
 
 .circle3 {
@@ -96,7 +112,7 @@ header {
 }
 
 .header {
-    width: 931px;
+    width: auto;
     height: 353px;
     display: flex;
     text-align: center;  
@@ -204,6 +220,10 @@ header {
     left: -20px;
 }
 
+.sp {
+    display: none;
+}
+
 /*基本情報*/
 #data {
     text-align: center;
@@ -217,7 +237,7 @@ header {
 .data-contents {
     display: inline-block;
     background-color: #E9ECF3;
-    padding: 50px;
+    padding: 30px;
     border-radius: 20px;
 
 }
@@ -242,6 +262,10 @@ header {
 
 .data-content h2 {
     padding: 30px;
+}
+
+.min-title {
+    display: flex;
 }
 
 
@@ -282,4 +306,160 @@ header {
 /*フッター*/
 footer {
     text-align: center;
+}
+
+@media all and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    .circle1 {
+        opacity: 0;
+    }
+    
+    .circle2 {
+        opacity: 0;
+
+    }
+
+    
+
+    
+    .circle3 {
+        opacity: 0;
+    }
+    
+    .circle4 {
+        opacity: 0;
+
+    }
+    
+    
+    nav {
+        display: none;
+    }
+    
+    
+
+    
+    #intro {
+        display: block;
+    }
+    
+    .header {
+        width: auto;
+        height: 353px;
+        display: block;
+        text-align: center;  
+    }
+    
+    .header img {
+        width: 150px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .title {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .instagram {
+        width: 100px;
+    }
+    
+
+    /*スカッシュとは？？*/
+    .content {
+        width: 80vw;
+    }
+    
+    /*アピールポイント*/
+    .box {
+        display: block;;
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .num {
+        width: 45px;
+    }
+    
+    .image img {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+    
+    .add {
+        width: 18px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+    
+    /*基本情報*/
+    .data-content img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .min-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .data-contents {
+        width: 60vw;
+    }
+    
+    .data-content {
+        display: block;
+    }
+    
+    
+    /*新入生歓迎会情報*/
+    
+    #welcome {
+        background-color: #F4F0DE;
+        text-align: center;}
+    
+    #welcome h2, h3 {
+        color: #EBC81E;
+    
+    }
+    
+    #welcome img {
+        width: 157px;
+    }
+    
+    
+    .welcome-contents {
+        display: inline-block;
+    }
+    
+    .welcome-content {
+        width: auto;
+        padding: 40px;
+    }
+
 }
