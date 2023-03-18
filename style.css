@@ -11,16 +11,16 @@
 
 
 h1 {
-    font-size: 128px;
+    font-size: 10vw;
     margin: 0 auto;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2.5vw;
 }
 
 h3 {
-    font-size: 64px;
+    font-size: 5vw;
 }
 
 p {
@@ -61,13 +61,7 @@ svg {
 	100% {opacity: 1;}
 }
 
-.circle3 {
-    display: inline-block;
-    border-radius: 50%;
-    background: #3a4b9e;
-    position: absolute;
-    z-index: 2;
-}
+
 
 .circle4 {
     display: inline-block;
@@ -119,7 +113,8 @@ header {
 }
 
 .header img {
-    width: 343px;
+    width: 25vw;
+    height: 25vw;
     position: relative;
     z-index: 2;
 }
@@ -131,7 +126,7 @@ header {
 }
 
 .instagram {
-    width: 250px;
+    width: 23vw;
     display: inline-block;
     position: absolute;
     top: 0px;
@@ -143,8 +138,26 @@ header {
     display: flex;
 }
 
+
+
+/* ---- particles.js container ---- */ 
+#particles-js { 
+    position:absolute; 
+    width: 100%; 
+    height: 70vh; 
+    background-color: #e9ecf3; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+}
+
+
+
+
 /*スカッシュとは？？*/
 #about {
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -155,6 +168,7 @@ header {
 .content {
     width: 606px;
     margin: 0 auto;
+    position: relative;
 }
 
 .content p {
@@ -174,14 +188,15 @@ header {
 
 .box {
     display: flex;
-    width: 1000px;
-    height: 508px;
+    width: 80%;
     margin: 0 auto;
+    padding: 10vh 0;
     align-items: center;
+
 }
 
 .num {
-    width: 100px;
+    width: 8vw;
 }
 
 .box h2 {
@@ -206,18 +221,18 @@ header {
 }
 
 .image img {
-    width: 380px;
-    height: 380px;
+    width: 28vw;
+    height: 28vw;
     border-radius: 50%;
     position: relative;
     z-index: 3;
 }
 
 .add {
-    width: 40px;
+    width: 3vw;
     position: relative;
-    top: -30px;
-    left: -20px;
+    top: -4vh;
+    left: -1vw;
 }
 
 .sp {
@@ -235,11 +250,13 @@ header {
 }
 
 .data-contents {
+    width: 50%;
     display: inline-block;
     background-color: #E9ECF3;
     padding: 30px;
     border-radius: 20px;
-
+    position: relative;
+    z-index: 5;
 }
 
 .data-content {
@@ -251,7 +268,8 @@ header {
 }
 
 .data-content img {
-    width: 98px;
+    width: 9vw;
+    height: 9vw;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -261,20 +279,31 @@ header {
 }
 
 .data-content h2 {
-    padding: 30px;
+    padding: 1vw 3vw;
 }
 
 .min-title {
     display: flex;
+    align-items: center;
+
 }
 
-
+.circle3 {
+    display: inline-block;
+    border-radius: 50%;
+    background: #3a4b9e;
+    position: absolute;
+    z-index: -1;
+}
 
 /*新入生歓迎会情報*/
 
 #welcome {
     background-color: #F4F0DE;
-    text-align: center;}
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
 
 #welcome h2, h3 {
     color: #EBC81E;
@@ -282,20 +311,20 @@ header {
 }
 
 #welcome img {
-    width: 259px;
+    width: 30vw;
     border-radius: 50%;
 }
 
 .welcome-all {
-    display: inline-block;
 }
 
 .welcome-contents {
     display: flex;
+    text-align: center;
 }
 
 .welcome-content {
-    width: 444px;
+    width: 40%;
     padding: 40px;
 }
 
@@ -309,44 +338,10 @@ footer {
 }
 
 @media all and (max-width: 480px) {
-    h1 {
-        font-size: 48px;
-    }
-    
     h2 {
-        font-size: 18px;
+        font-size: 5vw;
     }
-    
-    h3 {
-        font-size: 32px;
-    }
-    
-    p {
-        font-size: 12px;
-    }
-    
-    .circle1 {
-        opacity: 0;
-    }
-    
-    .circle2 {
-        opacity: 0;
-
-    }
-
-    
-
-    
-    .circle3 {
-        opacity: 0;
-    }
-    
-    .circle4 {
-        opacity: 0;
-
-    }
-    
-    
+       
     nav {
         display: none;
     }
@@ -354,19 +349,18 @@ footer {
     
 
     
-    #intro {
-        display: block;
-    }
+
     
     .header {
-        width: auto;
-        height: 353px;
+        width: 80vw;
+        height: auto;
         display: block;
         text-align: center;  
+        margin: 0 auto;
+
     }
     
     .header img {
-        width: 150px;
         position: relative;
         z-index: 2;
     }
@@ -393,6 +387,7 @@ footer {
         width: auto;
         height: auto;
         padding: 20px;
+        text-align: center;
     }
     
     .num {
@@ -404,9 +399,14 @@ footer {
         height: 250px;
         text-align: center;
     }
+
+   .text p {
+    text-align-last: left;
+   }
     
     .add {
         width: 18px;
+        display: inline-block;
     }
 
     .pc {
