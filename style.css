@@ -39,18 +39,20 @@ svg {
     z-index: 1;
 }
 
-.circle2 {
-    border-radius: 50%;
-    background: #e8534d;
-    position: absolute;
-    z-index: 2;
+
+
+
+
+.effect-fade {
+    opacity: 0;
+    transform: translate(0, 100px); 
+    transition: all 2000ms;
 }
 
-.fadein {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 2s;
-}
+.effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 
 .blink {
 	animation: blinking 0.7s ease-in-out infinite alternate;
@@ -138,6 +140,9 @@ header {
     display: flex;
 }
 
+.more-button {
+    display: none;
+}
 
 
 /* ---- particles.js container ---- */ 
@@ -166,7 +171,7 @@ header {
     text-align: center;
 }
 .content {
-    width: 606px;
+    width: 50vw;
     margin: 0 auto;
     position: relative;
 }
@@ -177,14 +182,50 @@ header {
     z-index: 1;
 }
 
+.content img {
+    width: 5vw;
+    position: absolute;
+}
+
+.fuwafuwa {
+    animation: fuwafuwa 2s infinite ease-in-out .4s alternate;
+    background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+  
+  @keyframes fuwafuwa {
+    0% {
+      transform:translate(0, 0) rotate(-8deg);
+    }
+    50% {
+      transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+      transform:translate(0, 0) rotate(8deg);
+    }
+  }
+  
 /*アピールポイント*/
 #point {
     background-color: #F4E3E3;
+    position: relative;
 }
 #point h3 {
     color: #e8534d;
     text-align: center;
 }
+
+.circle2 {
+    border-radius: 50%;
+    background: #e8534d;
+    position: absolute;
+}
+
+
 
 .box {
     display: flex;
@@ -192,7 +233,7 @@ header {
     margin: 0 auto;
     padding: 10vh 0;
     align-items: center;
-
+    position: relative;
 }
 
 .num {
@@ -225,7 +266,6 @@ header {
     height: 28vw;
     border-radius: 50%;
     position: relative;
-    z-index: 3;
 }
 
 .add {
@@ -300,9 +340,8 @@ header {
 
 #welcome {
     background-color: #F4F0DE;
-    text-align: center;
     position: relative;
-    margin: 0 auto;
+    text-align: center;
 }
 
 #welcome h2, h3 {
@@ -316,11 +355,13 @@ header {
 }
 
 .welcome-all {
+    display: inline-block;
+    text-align: center;
 }
 
 .welcome-contents {
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 .welcome-content {
@@ -345,11 +386,6 @@ footer {
     nav {
         display: none;
     }
-    
-    
-
-    
-
     
     .header {
         width: 80vw;
